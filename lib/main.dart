@@ -22,6 +22,7 @@ class MainApp extends StatelessWidget {
   Widget build(final BuildContext context) => BlocProvider<CatBloc>(
         create: (final _) => CatBloc(),
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             textTheme: const TextTheme(
               bodyMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
